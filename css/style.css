@@ -1,0 +1,315 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 246, 233);
+}
+
+
+.container {
+    background-color:rgb(172, 226, 225);
+    margin-bottom: 50px;
+    height: 100%;
+    padding: 120px 0px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    font-style: normal;
+    color: darkcyan;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style:normal;
+    color: rgb(19,175,181);
+}
+
+.rabbit1 {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    height: 100px;
+    width: auto;
+}
+
+.rabbit2 {
+    position: absolute;
+    margin-bottom: 0px;
+    left: 30px;
+    height: 100px;
+    width: auto;
+}
+
+.hypatia{
+    height: 500px;
+    text-align: center;
+    border-radius: 25%;
+}
+
+.heading {
+    margin-block-start: 0px;
+    font-size: 2rem;
+}
+
+
+.container-2 {
+    height: 40%;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color:rgb(187, 226, 236);
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.container-3 {
+    height: 100%;
+    background-color:rgb(187, 226, 236);
+    padding: 40px 140px;
+    text-align: center;
+    color: rgb(13, 146, 118);
+    margin-bottom: 50px;
+ }
+ 
+ 
+ .skills, .skills3 {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+ }
+ 
+ .skills2 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    padding: 20px;
+ }
+ 
+ .sticker {
+    height: 150px;
+    width: 150px;
+    border: 10px solid  darkcyan;
+    border-radius: 20px;
+ }
+ 
+ .content {
+    max-width: 600px;
+ }
+ 
+ p {
+    padding-top: 30px;
+    padding-left: 40px;
+    line-height: 2;
+    font-family:"Merriweather", serif;
+    color: black;
+ }
+
+ .cogito {
+    color:  rgb(13, 146, 118);
+    font-style: italic;
+ }
+ 
+ .works{
+    background-color:rgb(187, 226, 236);
+ }
+
+ .works h2 {
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-style:normal;
+    color: rgb(19,175,181);
+ }
+ .container-4 {
+    height: 100%;
+    background-color:rgb(187, 226, 236);
+    color: rgb(13, 146, 118);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.grid-header {
+    text-align: center;
+}
+
+.container-4 img {
+    width: auto;
+    height: 200px;
+    border: 5px solid darkcyan;
+    border-radius:10px ;
+}
+
+.container-4 a {
+    text-decoration: none;
+    font-size:2rem;
+    font-family: "Montserrat", sans-serif; 
+    color: rgb(19,175,181);
+}
+
+
+.container-5 {
+    height: 40%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(255, 246, 233);
+    color: rgb(13, 146, 118);
+}
+
+
+.container-6 {
+    background-color: rgb(65, 201, 226);
+    text-align: center;
+    padding: 40px;
+    color: antiquewhite;
+}
+
+.container-6 h2 {
+    color: antiquewhite;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    border-radius: 10%;
+}
+
+.ft {
+    padding-top: 20px;
+    font-family: "Merriweather", serif;
+    font-size: 0.75rem;
+    color: antiquewhite;
+    padding-left: 0px;
+}
+
+
+@media (max-width:1200px) and (min-width:650px){
+    .container-4 {
+        height: 100%;
+        background-color:rgb(187, 226, 236);
+        color: rgb(13, 146, 118);
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        padding: 20px;
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        text-align: left; 
+    }
+
+    .container-4 img {
+        max-width: 100%; 
+        height: auto;
+        margin-right: 20px; 
+    }
+
+    .grid-header {
+        margin-top: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
+
+@media (max-width: 790px) and (min-width: 650px){
+    .container-3{
+        text-align: center;
+        padding: 10px 0px ;
+    }
+    
+    .content{
+        padding: 10px 15px;
+    }
+
+   
+}
+
+@media (max-width: 650px){
+    .container-3{
+        text-align: center;
+        padding: 10px 0px ;
+    }
+   
+    .skills, .skills2, .skills3{
+        display: block;
+        text-align: center;
+    }
+
+    .content {
+        padding-right: 20px;
+    }
+   
+   
+    .sticker{
+        height: 300px;
+        width: 300px;
+        border: 10px solid rgb(13, 146, 118);
+        margin: 0 auto;
+    }
+   
+    .btn{
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    .cogito {
+        text-align: center;
+    }
+
+    .bottom-pg {
+        text-align: center;
+        font-size: 80% ;
+    }
+ 
+    .container-4 {
+        height: 100%;
+        background-color:rgb(187, 226, 236);
+        color: rgb(13, 146, 118);
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        padding: 20px;
+    }
+    .grid-header{
+        padding: 20px;
+        text-align: center;
+        max-width: 100%; 
+        text-decoration: none;
+        font-size:2rem;
+        font-family: "Montserrat", sans-serif; 
+        color: rgb(19,175,181);
+        display: block; 
+        margin-top: 10px; 
+    }
+    
+    .container-4 img {
+        max-width: 100%; 
+        height: auto;
+        border: 10px solid rgb(13, 146, 118);
+        margin: 0 auto; 
+    }
+    
+    .grid-content {
+        margin-top: 5px;
+    }
+}
